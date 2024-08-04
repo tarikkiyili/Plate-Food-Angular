@@ -1,0 +1,27 @@
+<div class="product">
+  <!-- CARDS SECTION -->
+  <div class="cards_prod">
+    <div *ngFor="let product of products">
+      <div class="card">
+        <div class="card_texts">
+          <h3 class="what_txt">{{ product.name }}</h3>
+          <img class="what_img" [src]="product.image" alt="" />
+          <div>
+            <div class="prices">
+              <div class="dolar">$</div>
+              <div class="price">{{ product.price }}</div>
+            </div>
+            <div class="days">
+              <p class="what_txt">{{ "per_day" | transloco }}</p>
+            </div>
+          </div>
+          <p class="what_txt">{{ product.Description }}</p>
+          <button (click)="viewDetails(product.id)" class="read_more_btn">
+            {{ "order_now" | transloco }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

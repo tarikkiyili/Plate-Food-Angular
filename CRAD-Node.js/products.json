@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Ürün 1",
+    "id": 1,
+    "price": 110,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 2",
+    "id": 2,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 3",
+    "id": 3,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 4",
+    "id": 4,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 5",
+    "id": 5,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 6",
+    "id": 6,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 7",
+    "id": 7,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 8",
+    "id": 8,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 9",
+    "id": 9,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 10",
+    "id": 10,
+    "price": 100,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  },
+  {
+    "name": "Ürün 11",
+    "id": 11,
+    "price": 150,
+    "Description": "If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!",
+    "image": "../../../assets/What_we_offer_img/product-01-176x176.png"
+  }
+]

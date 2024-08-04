@@ -1,0 +1,89 @@
+<div class="admin-container">
+  <h1>{{ "admin_panel" | transloco }}</h1>
+  <div class="form-container">
+    <h2>{{ "manage_products" | transloco }}</h2>
+    <form (ngSubmit)="onSubmit()">
+      <input type="hidden" [(ngModel)]="product.id" name="id" />
+      <div class="input_cont">
+        <input
+          placeholder="{{ 'name' | transloco }}"
+          type="text"
+          id="name"
+          [(ngModel)]="product.name"
+          name="name"
+          required
+        />
+      </div>
+      <div class="input_cont">
+        <input
+          placeholder="{{ 'price' | transloco }}"
+          type="number"
+          id="price"
+          [(ngModel)]="product.price"
+          name="price"
+          required
+        />
+      </div>
+      <div class="input_cont">
+        <input
+          placeholder="{{ 'description' | transloco }}"
+          type="text"
+          id="description"
+          [(ngModel)]="product.Description"
+          name="Description"
+          required
+        />
+      </div>
+      <div class="input_cont">
+        <input
+          type="file"
+          id="file-upload"
+          (change)="onFileSelected($event)"
+          style="display: none"
+          required
+        />
+        <button type="button" (click)="triggerFileInput()">
+          {{ "select_file" | transloco }}
+        </button>
+        <span>{{ fileName || ("no_file_selected" | transloco) }}</span>
+      </div>
+      <div class="input_cont">
+        <button type="submit">{{ "save" | transloco }}</button>
+      </div>
+    </form>
+  </div>
+  <div class="products-container">
+    <h2>{{ "products_list" | transloco }}</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>{{ "name" | transloco }}</th>
+          <th>{{ "id" | transloco }}</th>
+          <th>{{ "price" | transloco }}</th>
+          <th>{{ "description" | transloco }}</th>
+          <th>{{ "image" | transloco }}</th>
+          <th>{{ "actions" | transloco }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.name }}</td>
+          <td>{{ product.id }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.Description }}</td>
+          <td>
+            <img [src]="product.image" alt="{{ product.name }}" width="50" />
+          </td>
+          <td>
+            <button class="edit_btn" (click)="editProduct(product)">
+              {{ "edit" | transloco }}
+            </button>
+            <button (click)="deleteProduct(product.id)">
+              {{ "delete" | transloco }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

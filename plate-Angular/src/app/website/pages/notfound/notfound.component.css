@@ -1,0 +1,19 @@
+.notfound_container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound {
+  text-align: center;
+  color: #558b48;
+}
+
+.notfound h1 {
+  font-size: 25rem;
+}
+
+.notfound h2 {
+  font-size: 5rem;
+}

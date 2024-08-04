@@ -1,0 +1,130 @@
+.footer {
+  transition: background-color 1.5s;
+  padding: 10rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e4e4e4;
+}
+
+.footer_elements {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-items: start;
+  gap: 10rem;
+  width: 80%;
+}
+
+.footer_img {
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.footer_element {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 1.2rem;
+}
+
+.footer li {
+  list-style-type: none;
+  margin-bottom: 0.4rem;
+}
+
+.phone li,
+.mail li {
+  display: inline-block;
+}
+
+.footer_element h2 {
+  font-size: 1.4rem;
+  letter-spacing: -0.6px;
+  margin-bottom: 20px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #545454;
+}
+
+.footer a:hover {
+  color: #71b85f;
+  transition: all 0.5s;
+}
+
+.footer_element p {
+  font-size: 1.6rem;
+  color: #bcbcbc;
+}
+
+.footer_element li,
+.footer_element a {
+  font-size: 1.6rem;
+}
+
+.phone li {
+  margin-right: 20px;
+}
+
+.mail li {
+  margin-right: 14px;
+}
+
+.adress {
+  margin-top: 20px;
+}
+
+.grey {
+  color: #bcbcbc;
+}
+
+.quick_links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.food_packages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer_icons li {
+  margin: 20px 20px 20px 0;
+  display: inline-block;
+}
+
+.footer_icon {
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #bcbcbc;
+}
+
+.footer_icon:hover {
+  cursor: pointer;
+}
+
+.facebook {
+  color: #0866ff;
+}
+
+.youtube {
+  color: #ff2929;
+}
+
+@media (max-width: 1250px) {
+  .footer_elements {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 750px) {
+  .footer_elements {
+    grid-template-columns: repeat(1, auto);
+  }
+}

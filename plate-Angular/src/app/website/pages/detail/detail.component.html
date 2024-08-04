@@ -1,0 +1,17 @@
+<div class="detail_container" *ngIf="product">
+  <div class="details">
+    <div class="img_cont">
+      <img [src]="product.image" alt="" />
+    </div>
+    <div class="detail_texts">
+      <h2>{{ product.name }}</h2>
+      <p class="detail_txt">
+        {{ product.Description }}
+      </p>
+      <p class="cost">${{ product.price }} {{ "per_day" | transloco }}</p>
+      <div class="order_btn_cont">
+        <button class="order_btn">{{ "order_now" | transloco }}</button>
+      </div>
+    </div>
+  </div>
+</div>

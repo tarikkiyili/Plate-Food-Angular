@@ -1,0 +1,46 @@
+.spinner-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.big-circle {
+  width: 100px;
+  height: 100px;
+  background-color: #71b85f;
+  border-radius: 50%;
+  position: relative;
+}
+
+.small-circle {
+  width: 75px;
+  height: 75px;
+  background-color: #71b85f;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translate(85px) rotate(0deg);
+  animation: orbit 2s infinite linear;
+}
+
+.small-circle:nth-child(2) {
+  animation-delay: -1s;
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) translate(85px) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) translate(85px)
+      rotate(-360deg);
+  }
+}

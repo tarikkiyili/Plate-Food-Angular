@@ -1,0 +1,70 @@
+<div class="header_container">
+  <header class="header">
+    <button class="menu-toggle" (click)="toggleNavbar()">☰</button>
+    <img
+      src="../../../assets/Logo/logo-inverse-269x100.png"
+      alt="Logo"
+      class="header_logo"
+    />
+    <nav class="nav_container" [class.active]="navbarOpen">
+      <ul class="nav">
+        <li class="nav_items">
+          <div class="nav_itm">
+            <button class="nav_btn">
+              <span class="nav_span">{{ "programs" | transloco }}</span>
+            </button>
+          </div>
+        </li>
+        <li class="nav_items">
+          <div class="nav_itm">
+            <button class="nav_btn">
+              <span class="nav_span">{{ "about" | transloco }}</span>
+            </button>
+          </div>
+        </li>
+        <li class="nav_items">
+          <div class="nav_itm">
+            <button class="nav_btn">
+              <span class="nav_span">{{ "clients" | transloco }}</span>
+            </button>
+          </div>
+        </li>
+        <li class="nav_items">
+          <div class="switch no-rtl">
+            <input
+              id="language-toggle-tr"
+              class="check-toggle check-toggle-round-flat"
+              type="radio"
+              name="language"
+              value="tr"
+              (change)="changeLang($event)"
+            />
+            <input
+              id="language-toggle-en"
+              class="check-toggle check-toggle-round-flat"
+              type="radio"
+              name="language"
+              value="en"
+              checked
+              (change)="changeLang($event)"
+            />
+            <input
+              id="language-toggle-ar"
+              class="check-toggle check-toggle-round-flat"
+              type="radio"
+              name="language"
+              value="ar"
+              (change)="changeLang($event)"
+            />
+
+            <div class="toggle no-rtl">
+              <label for="language-toggle-tr" class="label-tr">TR</label>
+              <label for="language-toggle-en" class="label-en">EN</label>
+              <label for="language-toggle-ar" class="label-ar">AR</label>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>

@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: #558b48;
+  color: white;
+}
+
+/*---------- DARK MODE BUTTON ----------*/
+.sun-active .circle,
+.sun-active .about_us,
+.sun-active .how,
+.sun-active .clients_say,
+.sun-active .card,
+.sun-active .container {
+  transition: all 1s;
+  background-color: #292929 !important;
+}
+
+.sun-active .header_container,
+.sun-active .slider,
+.sun-active .what,
+.sun-active .features,
+.sun-active .btn_send_review,
+.sun-active .read_more_btn {
+  transition: all 1s;
+  background-color: #446e39 !important;
+}
+
+.sun-active .clients_img_1.active_img,
+.sun-active .clients_img_2.active_img,
+.sun-active .clients_img_3.active_img {
+  border: 5px solid #446e39 !important;
+}
+
+.sun-active .btn_send_review,
+.sun-active .read_more_btn {
+  box-shadow: 0px 5px 1px #22371c !important;
+}
+
+.sun-active .footer {
+  transition: all 1s;
+  background-color: #212121 !important;
+}
+
+.sun-active .about_us_texts p,
+.sun-active .about_us_texts h2,
+.sun-active .about_us_texts span,
+.sun-active .about_us_texts li,
+.sun-active .how_title p,
+.sun-active .how_title h2,
+.sun-active .client h2,
+.sun-active .client p,
+.sun-active .footer_elements p,
+.sun-active .footer_elements h2,
+.sun-active .footer_elements li,
+.sun-active .footer_elements a,
+.sun-active .dolar,
+.sun-active .price,
+.sun-active .days p,
+.sun-active .card_texts p,
+.sun-active .card_texts a,
+.sun-active .card_texts h3,
+.sun-active .dashes span {
+  transition: all 1s;
+  color: white !important;
+}
+.sun-active .what_img {
+  transition: all 1s;
+  box-shadow: 0px 0px 20px #292929 !important;
+}
+
+@media (max-width: 1450px) {
+  html {
+    font-size: 50% !important;
+  }
+}
